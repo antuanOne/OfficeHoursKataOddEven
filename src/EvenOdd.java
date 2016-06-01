@@ -9,4 +9,13 @@ public class EvenOdd {
         return String.valueOf(numberToCheck);
 
     }
+
+    public boolean checkPrime(int numberToCheck) {
+        for (int x = 2; x < numberToCheck; x++) {
+            if ((numberToCheck % x) == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
